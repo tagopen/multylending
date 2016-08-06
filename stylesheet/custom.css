@@ -285,7 +285,10 @@ body.page-accessory {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .gift-photo img {
@@ -360,6 +363,13 @@ body.page-accessory {
   }
 }
 @media only screen and (min-width: 768px) {
+  .column-3 {
+    width: 49.7%;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+  }
+
   .accessory-cover-text {
     top: 145px;
     right: 26px;
@@ -376,11 +386,24 @@ body.page-accessory {
     top: 50px;
   }
   .accessory-watch-text {
-    top: 170px;
-    left: 78px;
+    top: 160px;
+    left: 70px;
   }
   .accessory-watch-text p {
     padding: 0;
+  }
+  .accessory-gidgray-text, .accessory-gidrose-text, .accessory-gidgold-text {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .gift {
+    width: 50%;
+  }
+  .gift-photo_copter {
+    height: 616px;
   }
 }
 @media only screen and (min-width: 992px) {
