@@ -131,14 +131,18 @@ body.page-accessory
   &-photo
     min-height: 360px
     display: -webkit-box
+    display: -moz-box
     display: -ms-flexbox
     display: -webkit-flex
     display: flex
-    -webkit-justify-content: center
-    justify-content: center
-    -webkit-flex-direction: column
-    -ms-flex-direction: column
-    flex-direction: column
+    -webkit-box-pack: justify
+    -webkit-justify-content: space-between
+    justify-content: space-between
+    -webkit-flex-wrap: wrap
+    -moz-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    -o-flex-wrap: wrap
+    flex-wrap: wrap
     img
       margin: 0 auto
     &_copter
@@ -297,6 +301,9 @@ body.page-accessory
       &gold
         &-text
           position: absolute
+          left: auto
+          right: auto
+          top: auto
       &gray-text
         top: 68px
         right: 7px
@@ -305,7 +312,7 @@ body.page-accessory
         right: 21px
       &gold-text
         top: 115px
-        left: 123px
+        left: 113px
 
   .gift
     &-photo
