@@ -363,7 +363,8 @@ body.page-accessory {
   }
 }
 @media only screen and (min-width: 768px) {
-  .column-3 {
+  .column-3,
+  .column-9 {
     width: 49.7%;
     float: none;
     display: inline-block;
@@ -375,7 +376,7 @@ body.page-accessory {
     right: 26px;
   }
   .accessory-phone-text {
-    top: 36px;
+    top: 0;
     right: 22px;
   }
   .accessory-glass-text {
@@ -399,14 +400,34 @@ body.page-accessory {
     right: 0;
   }
 
-  .gift {
-    width: 50%;
-  }
   .gift-photo_copter {
     height: 616px;
   }
 }
 @media only screen and (min-width: 992px) {
+  .column-3 {
+    width: 33.33333%;
+    float: left;
+  }
+
+  .column-9 {
+    width: 66.66666%;
+    float: left;
+  }
+
+  .accessory-cover-text {
+    top: 204px;
+    right: 62px;
+  }
+  .accessory-connector-text {
+    top: 125px;
+    left: 38px;
+  }
+  .accessory-watch-text {
+    top: 240px;
+    left: 162px;
+  }
+
   .gift-photo_copter {
     height: 652px;
   }
@@ -416,8 +437,44 @@ body.page-accessory {
   }
 }
 @media only screen and (min-width: 1200px) {
+  .accessory-cover-text {
+    top: 262px;
+    right: 98px;
+  }
+  .accessory-phone-text {
+    top: 68px;
+    right: 34px;
+  }
+  .accessory-glass-text {
+    top: 68px;
+    left: 30px;
+  }
+  .accessory-connector-text {
+    top: 159px;
+    left: 20px;
+  }
+  .accessory-watch-text {
+    top: 300px;
+    left: 210px;
+  }
+  .accessory-gidgray-text, .accessory-gidrose-text, .accessory-gidgold-text {
+    position: absolute;
+  }
+  .accessory-gidgray-text {
+    top: 68px;
+    right: 7px;
+  }
+  .accessory-gidrose-text {
+    top: 4px;
+    right: 21px;
+  }
+  .accessory-gidgold-text {
+    top: 115px;
+    left: 123px;
+  }
+
   .gift-photo_copter {
-    height: 648px;
+    height: 650px;
   }
   .gift-name {
     line-height: 32px;

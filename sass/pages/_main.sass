@@ -142,7 +142,7 @@ body.page-accessory
     img
       margin: 0 auto
     &_copter
-      height: 648px
+      height: 650px
   &-link
     vertical-align: middle
   &-title
@@ -199,7 +199,8 @@ body.page-accessory
         height: auto
 
 +r(768)
-  .column-3
+  .column-3,
+  .column-9
     width: 49.7%
     float: none
     display: inline-block
@@ -211,7 +212,7 @@ body.page-accessory
         right: 26px
     &-phone
       &-text
-        top: 36px
+        top: 0
         right: 22px
     &-glass
       &-text
@@ -236,12 +237,30 @@ body.page-accessory
           left: 0
           right: 0
   .gift
-    width: 50%
     &-photo
       &_copter
         height: 616px
 
 +r(992)
+  .column-3
+    width: 33.33333%
+    float: left
+  .column-9
+    width: 66.66666%
+    float: left
+  .accessory
+    &-cover
+      &-text
+        top: 204px
+        right: 62px
+    &-connector
+      &-text
+        top: 125px
+        left: 38px
+    &-watch
+      &-text
+        top: 240px
+        left: 162px
   .gift
     &-photo
       &_copter
@@ -251,10 +270,47 @@ body.page-accessory
         font-size: 17px
         line-height: 25px
 +r(1200)
+  .accessory
+    &-cover
+      &-text
+        top: 262px
+        right: 98px
+    &-phone
+      &-text
+        top: 68px
+        right: 34px
+    &-glass
+      &-text
+        top: 68px
+        left: 30px
+    &-connector
+      &-text
+        top: 159px
+        left: 20px
+    &-watch
+      &-text
+        top: 300px
+        left: 210px
+    &-gid
+      &gray,
+      &rose,
+      &gold
+        &-text
+          position: absolute
+      &gray-text
+        top: 68px
+        right: 7px
+      &rose-text
+        top: 4px
+        right: 21px
+      &gold-text
+        top: 115px
+        left: 123px
+
   .gift
     &-photo
       &_copter
-        height: 648px
+        height: 650px
     &-name 
       a
         font-size: 22px
