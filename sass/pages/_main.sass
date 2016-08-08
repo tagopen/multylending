@@ -3,8 +3,6 @@ body.page-accessory
   background-color: #fff
 .mt10
   margin-top: 10px
-.m0
-  margin: 0
 .column-3
   width: 33.33333%
   float: left
@@ -79,10 +77,10 @@ body.page-accessory
       margin: auto
   &-watch
     &-text
-      width: 206px    
+      width: 306px    
       top: 304px
-      left: 215px
-      font-size: 22px
+      left: 166px
+      font-size: 23px
     &-link
       margin-bottom: 5px
       font-size: 24px
@@ -116,7 +114,8 @@ body.page-accessory
       top: 115px
       left: 117px
   &-news
-    margin-top: 47px
+    margin-top: 22px
+    padding: 0
     &-text
       margin-bottom: 23px
       font: 300 16px/24px $font-family
@@ -125,7 +124,7 @@ body.page-accessory
   margin-top: 77px
   &-product
     background-color: #eee
-    padding: 23px 30px 47px
+    padding: 23px 30px 75px
   &-name
     text-transform: none
     a
@@ -218,6 +217,10 @@ body.page-accessory
       &-text
         top: 145px
         right: 26px
+    &-title
+      font: 300 18px/18px "Ubuntu", Helvetica, Arial, sans-serif
+    &-link
+      font: 300 14px/14px "Ubuntu", Helvetica, Arial, sans-serif
     &-phone
       &-text
         top: 0
@@ -228,27 +231,24 @@ body.page-accessory
         left: 20px
     &-connector
       &-text
-        top: 50px
+        top: 92px
+        left: 19px
+      &-title
+        margin-bottom: 0
     &-watch
       &-text
-        top: 160px
-        left: 70px
+        top: 180px
+        left: 97px
+        font-size: 14px
+        line-height: 14px
         p
           padding: 0
-    &-gid
-      &gray,
-      &rose,
-      &gold,
-        &-text
-          position: relative
-          top: 0
-          left: 0
-          right: 0
+      &-link
+        margin-bottom: 0
   .gift
     &-photo
       &_copter
-        height: 616px
-
+        height: 634px
 +r(992)
   .column-3
     width: 33.33333%
@@ -257,28 +257,60 @@ body.page-accessory
     width: 66.66666%
     float: left
   .accessory
+    &-title
+      font: 300 20px/23px "Ubuntu", Helvetica, Arial, sans-serif
+    &-link
+      font: 300 17px/18px "Ubuntu", Helvetica, Arial, sans-serif
     &-cover
       &-text
         top: 204px
         right: 62px
+    &-phone
+      &-text
+        top: 20px
+    &-glass
+      &-text
+        top: 20px
     &-connector
       &-text
         top: 125px
-        left: 38px
+        left: 12px
     &-watch
       &-text
         top: 240px
         left: 162px
+        font-size: 20px
+        line-height: 23px
+    &-gid
+      &gray  
+        &-text
+          top: 39px
+          right: 7px
+      &rose
+        &-text
+          top: 1px
+          right: 38px
+      &gold
+        &-text
+          top: 97px
+          left: 101px
+        &-title
+          margin-bottom: 0
+          line-height: 19px
   .gift
     &-photo
       &_copter
-        height: 677px
+        height: 668px
     &-name 
       a
-        font-size: 17px
-        line-height: 25px
+        font-size: 18px
+        line-height: 22px
 +r(1200)
   .accessory
+    &-title
+      font: 300 25px/28px "Ubuntu", Helvetica, Arial, sans-serif
+    &-link
+      font: 300 20px/21px "Ubuntu", Helvetica, Arial, sans-serif
     &-cover
       &-text
         top: 258px
@@ -287,6 +319,8 @@ body.page-accessory
       &-text
         top: 59px
         right: 41px
+      &-link
+        font-size: 18px
     &-glass
       &-text
         top: 59px
@@ -295,10 +329,22 @@ body.page-accessory
       &-text
         top: 155px
         left: 12px
+      &-title
+        margin-bottom: 7.5px
+      &-link
+        font-size: 18px
     &-watch
       &-text
         top: 306px
-        left: 215px
+        left: 166px
+        font-size: 25px
+        line-height: 30px
+      &-link
+        font-size: 25px
+        line-height: 29px
+    &-delivery
+      &-link
+        font-size: 18px
     &-gid
       &gray,
       &rose,
@@ -310,6 +356,8 @@ body.page-accessory
           left: auto
           right: auto
           top: auto
+        &-link
+          font-size: 18px
       &gray-text
         top: 68px
         right: 19px
@@ -324,8 +372,9 @@ body.page-accessory
 
   .gift
     &-photo
+      height: 374px
       &_copter
-        height: 668px
+        height: 664px
     &-name 
       a
         font-size: 22px

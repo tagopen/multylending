@@ -109,10 +109,6 @@ body.page-accessory {
   margin-top: 10px;
 }
 
-.m0 {
-  margin: 0;
-}
-
 .column-3 {
   width: 33.33333%;
   float: left;
@@ -215,10 +211,10 @@ body.page-accessory {
   margin: auto;
 }
 .accessory-watch-text {
-  width: 206px;
+  width: 306px;
   top: 304px;
-  left: 215px;
-  font-size: 22px;
+  left: 166px;
+  font-size: 23px;
 }
 .accessory-watch-link {
   margin-bottom: 5px;
@@ -260,7 +256,8 @@ body.page-accessory {
   left: 117px;
 }
 .accessory-news {
-  margin-top: 47px;
+  margin-top: 22px;
+  padding: 0;
 }
 .accessory-news-text {
   margin-bottom: 23px;
@@ -273,7 +270,7 @@ body.page-accessory {
 }
 .gift-product {
   background-color: #eee;
-  padding: 23px 30px 47px;
+  padding: 23px 30px 75px;
 }
 .gift-name {
   text-transform: none;
@@ -390,6 +387,12 @@ body.page-accessory {
     top: 145px;
     right: 26px;
   }
+  .accessory-title {
+    font: 300 18px/18px "Ubuntu", Helvetica, Arial, sans-serif;
+  }
+  .accessory-link {
+    font: 300 14px/14px "Ubuntu", Helvetica, Arial, sans-serif;
+  }
   .accessory-phone-text {
     top: 0;
     right: 22px;
@@ -399,24 +402,27 @@ body.page-accessory {
     left: 20px;
   }
   .accessory-connector-text {
-    top: 50px;
+    top: 92px;
+    left: 19px;
+  }
+  .accessory-connector-title {
+    margin-bottom: 0;
   }
   .accessory-watch-text {
-    top: 160px;
-    left: 70px;
+    top: 180px;
+    left: 97px;
+    font-size: 14px;
+    line-height: 14px;
   }
   .accessory-watch-text p {
     padding: 0;
   }
-  .accessory-gidgray-text, .accessory-gidrose-text, .accessory-gidgold-text {
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
+  .accessory-watch-link {
+    margin-bottom: 0;
   }
 
   .gift-photo_copter {
-    height: 616px;
+    height: 634px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -430,28 +436,64 @@ body.page-accessory {
     float: left;
   }
 
+  .accessory-title {
+    font: 300 20px/23px "Ubuntu", Helvetica, Arial, sans-serif;
+  }
+  .accessory-link {
+    font: 300 17px/18px "Ubuntu", Helvetica, Arial, sans-serif;
+  }
   .accessory-cover-text {
     top: 204px;
     right: 62px;
   }
+  .accessory-phone-text {
+    top: 20px;
+  }
+  .accessory-glass-text {
+    top: 20px;
+  }
   .accessory-connector-text {
     top: 125px;
-    left: 38px;
+    left: 12px;
   }
   .accessory-watch-text {
     top: 240px;
     left: 162px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .accessory-gidgray-text {
+    top: 39px;
+    right: 7px;
+  }
+  .accessory-gidrose-text {
+    top: 1px;
+    right: 38px;
+  }
+  .accessory-gidgold-text {
+    top: 97px;
+    left: 101px;
+  }
+  .accessory-gidgold-title {
+    margin-bottom: 0;
+    line-height: 19px;
   }
 
   .gift-photo_copter {
-    height: 677px;
+    height: 668px;
   }
   .gift-name a {
-    font-size: 17px;
-    line-height: 25px;
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 @media only screen and (min-width: 1200px) {
+  .accessory-title {
+    font: 300 25px/28px "Ubuntu", Helvetica, Arial, sans-serif;
+  }
+  .accessory-link {
+    font: 300 20px/21px "Ubuntu", Helvetica, Arial, sans-serif;
+  }
   .accessory-cover-text {
     top: 258px;
     right: 103px;
@@ -459,6 +501,9 @@ body.page-accessory {
   .accessory-phone-text {
     top: 59px;
     right: 41px;
+  }
+  .accessory-phone-link {
+    font-size: 18px;
   }
   .accessory-glass-text {
     top: 59px;
@@ -468,9 +513,24 @@ body.page-accessory {
     top: 155px;
     left: 12px;
   }
+  .accessory-connector-title {
+    margin-bottom: 7.5px;
+  }
+  .accessory-connector-link {
+    font-size: 18px;
+  }
   .accessory-watch-text {
     top: 306px;
-    left: 215px;
+    left: 166px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .accessory-watch-link {
+    font-size: 25px;
+    line-height: 29px;
+  }
+  .accessory-delivery-link {
+    font-size: 18px;
   }
   .accessory-gidgray-title, .accessory-gidrose-title, .accessory-gidgold-title {
     margin-bottom: 1px;
@@ -480,6 +540,9 @@ body.page-accessory {
     left: auto;
     right: auto;
     top: auto;
+  }
+  .accessory-gidgray-link, .accessory-gidrose-link, .accessory-gidgold-link {
+    font-size: 18px;
   }
   .accessory-gidgray-text {
     top: 68px;
@@ -497,8 +560,11 @@ body.page-accessory {
     left: 117px;
   }
 
+  .gift-photo {
+    height: 374px;
+  }
   .gift-photo_copter {
-    height: 668px;
+    height: 664px;
   }
   .gift-name {
     line-height: 32px;
