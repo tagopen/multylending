@@ -340,9 +340,23 @@ body.page-accessory {
     float: none;
   }
 
-  .accessory-delivery {
+  .accessory-text {
+    position: relative;
     padding-top: 30px;
     padding-bottom: 30px;
+    top: auto;
+    left: auto;
+    right: auto;
+    text-align: center;
+  }
+  .accessory-delivery {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    border-top: 1px solid #858585;
+  }
+  .accessory-delivery-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .accessory-glass, .accessory-phone {
     width: 100%;
@@ -353,12 +367,8 @@ body.page-accessory {
   .accessory-watch-text {
     width: auto;
   }
-  .accessory-text {
-    position: relative;
-    text-align: center;
-    top: auto;
-    left: auto;
-    right: auto;
+  .accessory-news {
+    padding: 0 15px;
   }
 
   .gift {
@@ -371,7 +381,15 @@ body.page-accessory {
     min-height: auto;
   }
   .gift-photo_copter {
+    height: 400px;
+  }
+  .gift-title {
     height: auto;
+    padding-bottom: 40px;
+  }
+  .gift-heading {
+    font-size: 30px;
+    line-height: 30px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -383,6 +401,14 @@ body.page-accessory {
     vertical-align: top;
   }
 
+  .column-pl {
+    right: 50%;
+  }
+
+  .column-pr {
+    left: 50%;
+  }
+
   .accessory-cover-text {
     top: 145px;
     right: 26px;
@@ -392,6 +418,7 @@ body.page-accessory {
   }
   .accessory-link {
     font: 300 14px/14px "Ubuntu", Helvetica, Arial, sans-serif;
+    text-decoration: underline;
   }
   .accessory-phone-text {
     top: 0;
@@ -410,7 +437,7 @@ body.page-accessory {
   }
   .accessory-watch-text {
     top: 180px;
-    left: 97px;
+    left: 49px;
     font-size: 14px;
     line-height: 14px;
   }
@@ -419,6 +446,9 @@ body.page-accessory {
   }
   .accessory-watch-link {
     margin-bottom: 0;
+  }
+  .accessory-delivery-link {
+    text-decoration: none;
   }
 
   .gift-photo_copter {
@@ -436,11 +466,20 @@ body.page-accessory {
     float: left;
   }
 
+  .column-pl {
+    right: 33.33333%;
+  }
+
+  .column-pr {
+    left: 66.66666%;
+  }
+
   .accessory-title {
     font: 300 20px/23px "Ubuntu", Helvetica, Arial, sans-serif;
   }
   .accessory-link {
     font: 300 17px/18px "Ubuntu", Helvetica, Arial, sans-serif;
+    text-decoration: none;
   }
   .accessory-cover-text {
     top: 204px;

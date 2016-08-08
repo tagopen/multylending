@@ -176,10 +176,24 @@ body.page-accessory
     max-width: 500px
     float: none
   .accessory
-    &-delivery
+    &-text
+      position: relative
       padding: 
         top: 30px
         bottom: 30px
+      top: auto
+      left: auto
+      right: auto
+      text-align: center
+    &-delivery
+      padding: 
+        top: 25px
+        bottom: 15px
+      border-top: 1px solid #858585
+      &-text
+        padding-top: 20px
+        padding-bottom: 20px
+
     &-glass,
     &-phone
       width: 100%
@@ -190,12 +204,9 @@ body.page-accessory
     &-watch
       &-text
         width: auto
-    &-text
-      position: relative
-      text-align: center
-      top: auto
-      left: auto
-      right: auto
+    &-news
+      padding: 0 15px
+
   .gift
     margin-top: 10px
     &-product
@@ -203,7 +214,14 @@ body.page-accessory
     &-photo 
       min-height: auto
       &_copter
-        height: auto
+        height: 400px
+    &-title
+      height: auto
+      padding-bottom: 40px
+    &-heading
+      font-size: 30px
+      line-height: 30px
+
 
 +r(768)
   .column-3,
@@ -212,6 +230,10 @@ body.page-accessory
     float: none
     display: inline-block
     vertical-align: top
+  .column-pl
+    right: 50%
+  .column-pr
+    left: 50%
   .accessory
     &-cover
       &-text
@@ -221,6 +243,7 @@ body.page-accessory
       font: 300 18px/18px "Ubuntu", Helvetica, Arial, sans-serif
     &-link
       font: 300 14px/14px "Ubuntu", Helvetica, Arial, sans-serif
+      text-decoration: underline
     &-phone
       &-text
         top: 0
@@ -238,13 +261,16 @@ body.page-accessory
     &-watch
       &-text
         top: 180px
-        left: 97px
+        left: 49px
         font-size: 14px
         line-height: 14px
         p
           padding: 0
       &-link
         margin-bottom: 0
+    &-delivery
+      &-link
+        text-decoration: none
   .gift
     &-photo
       &_copter
@@ -256,11 +282,16 @@ body.page-accessory
   .column-9
     width: 66.66666%
     float: left
+  .column-pl
+    right: 33.33333%
+  .column-pr
+    left: 66.66666%
   .accessory
     &-title
       font: 300 20px/23px "Ubuntu", Helvetica, Arial, sans-serif
     &-link
       font: 300 17px/18px "Ubuntu", Helvetica, Arial, sans-serif
+      text-decoration: none
     &-cover
       &-text
         top: 204px
