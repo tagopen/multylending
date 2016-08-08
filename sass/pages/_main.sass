@@ -3,6 +3,8 @@ body.page-accessory
   background-color: #fff
 .mt10
   margin-top: 10px
+.m0
+  margin: 0
 .column-3
   width: 33.33333%
   float: left
@@ -41,10 +43,12 @@ body.page-accessory
     position: absolute
     font: 300 25px/28px $font-family
     color: $text-color
+    p
+      margin: 0
   &-cover
     &-text
-      top: 262px
-      right: 98px
+      top: 258px
+      right: 103px
     &-link
       margin-left: 25px
 
@@ -53,41 +57,48 @@ body.page-accessory
     float: left
     cursor: pointer
     &-text
-      top: 68px
-      right: 34px
+      top: 59px
+      right: 41px
     &-link
       font-size: 18px
+      padding-left: 5px
   &-glass
     width: 40.61433%
     float: left
     &-text
-      top: 68px
-      left: 30px
+      top: 59px
+      left: 33px
   &-connector
     cursor: pointer
     &-link
       font-size: 18px
     &-text
-      top: 159px
-      left: 20px
+      top: 155px
+      left: 12px
       right: 0
       margin: auto
   &-watch
     &-text
-      width: 206px
-      top: 300px
-      left: 210px
+      width: 206px    
+      top: 304px
+      left: 215px
       font-size: 22px
     &-link
-      font-size: 22px
+      margin-bottom: 5px
+      font-size: 24px
+      line-height: 29px
+      letter-spacing: .5px
   &-delivery
     padding: 
-      top: 81px
-      bottom: 57px
+      top: 69px
+      bottom: 64px
     &-text
       position: relative
     &-link
-      font-size: 20px
+      padding: 
+        top: 14px
+        left: 4px
+      font-size: 18px
   &-gid
     cursor: pointer
     &-link,
@@ -95,13 +106,15 @@ body.page-accessory
       font-size: 18px
     &gray-text
       top: 68px
-      right: 7px
+      right: 19px
     &rose-text
       top: 4px
       right: 21px
+    &rose-link
+      padding-left: 20px
     &gold-text
       top: 115px
-      left: 123px
+      left: 117px
   &-news
     margin-top: 47px
     &-text
@@ -112,8 +125,7 @@ body.page-accessory
   margin-top: 77px
   &-product
     background-color: #eee
-    padding: 37px 30px 47px
-    min-height: 550px
+    padding: 23px 30px 47px
   &-name
     text-transform: none
     a
@@ -129,30 +141,22 @@ body.page-accessory
     font: 300 26px/32px $font-family
     color: $text-color
   &-photo
-    min-height: 360px
-    display: -webkit-box
-    display: -moz-box
-    display: -ms-flexbox
-    display: -webkit-flex
-    display: flex
-    -webkit-box-pack: justify
-    -webkit-justify-content: space-between
-    justify-content: space-between
-    -webkit-flex-wrap: wrap
-    -moz-flex-wrap: wrap
-    -ms-flex-wrap: wrap
-    -o-flex-wrap: wrap
-    flex-wrap: wrap
+    height: 378px
+    overflow: hidden
     img
       margin: 0 auto
     &_copter
-      height: 650px
+      height: 668px
   &-link
-    vertical-align: middle
+    position: relative
+    display: block
+    top: 50%
+    +transform( translateY(-50%) )
   &-title
     display: table
     width: 100%
-    height: 264px
+    height: 290px
+    padding-left: 9px
   &-heading
     display: table-cell
     vertical-align: middle
@@ -268,7 +272,7 @@ body.page-accessory
   .gift
     &-photo
       &_copter
-        height: 652px
+        height: 677px
     &-name 
       a
         font-size: 17px
@@ -277,28 +281,30 @@ body.page-accessory
   .accessory
     &-cover
       &-text
-        top: 262px
-        right: 98px
+        top: 258px
+        right: 103px
     &-phone
       &-text
-        top: 68px
-        right: 34px
+        top: 59px
+        right: 41px
     &-glass
       &-text
-        top: 68px
-        left: 30px
+        top: 59px
+        left: 33px
     &-connector
       &-text
-        top: 159px
-        left: 20px
+        top: 155px
+        left: 12px
     &-watch
       &-text
-        top: 300px
-        left: 210px
+        top: 306px
+        left: 215px
     &-gid
       &gray,
       &rose,
       &gold
+        &-title
+          margin-bottom: 1px
         &-text
           position: absolute
           left: auto
@@ -306,18 +312,20 @@ body.page-accessory
           top: auto
       &gray-text
         top: 68px
-        right: 7px
+        right: 19px
       &rose-text
         top: 4px
-        right: 21px
+        right: 26px
+      &rose-link
+        padding-left: 20px
       &gold-text
-        top: 115px
-        left: 113px
+        top: 119px
+        left: 117px
 
   .gift
     &-photo
       &_copter
-        height: 650px
+        height: 668px
     &-name 
       a
         font-size: 22px

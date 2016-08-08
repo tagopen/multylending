@@ -109,6 +109,10 @@ body.page-accessory {
   margin-top: 10px;
 }
 
+.m0 {
+  margin: 0;
+}
+
 .column-3 {
   width: 33.33333%;
   float: left;
@@ -167,9 +171,12 @@ body.page-accessory {
   font: 300 25px/28px "Ubuntu", Helvetica, Arial, sans-serif;
   color: #444;
 }
+.accessory-text p {
+  margin: 0;
+}
 .accessory-cover-text {
-  top: 262px;
-  right: 98px;
+  top: 258px;
+  right: 103px;
 }
 .accessory-cover-link {
   margin-left: 25px;
@@ -180,19 +187,20 @@ body.page-accessory {
   cursor: pointer;
 }
 .accessory-phone-text {
-  top: 68px;
-  right: 34px;
+  top: 59px;
+  right: 41px;
 }
 .accessory-phone-link {
   font-size: 18px;
+  padding-left: 5px;
 }
 .accessory-glass {
   width: 40.61433%;
   float: left;
 }
 .accessory-glass-text {
-  top: 68px;
-  left: 30px;
+  top: 59px;
+  left: 33px;
 }
 .accessory-connector {
   cursor: pointer;
@@ -201,29 +209,34 @@ body.page-accessory {
   font-size: 18px;
 }
 .accessory-connector-text {
-  top: 159px;
-  left: 20px;
+  top: 155px;
+  left: 12px;
   right: 0;
   margin: auto;
 }
 .accessory-watch-text {
   width: 206px;
-  top: 300px;
-  left: 210px;
+  top: 304px;
+  left: 215px;
   font-size: 22px;
 }
 .accessory-watch-link {
-  font-size: 22px;
+  margin-bottom: 5px;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.5px;
 }
 .accessory-delivery {
-  padding-top: 81px;
-  padding-bottom: 57px;
+  padding-top: 69px;
+  padding-bottom: 64px;
 }
 .accessory-delivery-text {
   position: relative;
 }
 .accessory-delivery-link {
-  font-size: 20px;
+  padding-top: 14px;
+  padding-left: 4px;
+  font-size: 18px;
 }
 .accessory-gid {
   cursor: pointer;
@@ -233,15 +246,18 @@ body.page-accessory {
 }
 .accessory-gidgray-text {
   top: 68px;
-  right: 7px;
+  right: 19px;
 }
 .accessory-gidrose-text {
   top: 4px;
   right: 21px;
 }
+.accessory-gidrose-link {
+  padding-left: 20px;
+}
 .accessory-gidgold-text {
   top: 115px;
-  left: 123px;
+  left: 117px;
 }
 .accessory-news {
   margin-top: 47px;
@@ -257,8 +273,7 @@ body.page-accessory {
 }
 .gift-product {
   background-color: #eee;
-  padding: 37px 30px 47px;
-  min-height: 550px;
+  padding: 23px 30px 47px;
 }
 .gift-name {
   text-transform: none;
@@ -280,34 +295,30 @@ body.page-accessory {
   color: #444;
 }
 .gift-photo {
-  min-height: 360px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  -o-flex-wrap: wrap;
-  flex-wrap: wrap;
+  height: 378px;
+  overflow: hidden;
 }
 .gift-photo img {
   margin: 0 auto;
 }
 .gift-photo_copter {
-  height: 650px;
+  height: 668px;
 }
 .gift-link {
-  vertical-align: middle;
+  position: relative;
+  display: block;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .gift-title {
   display: table;
   width: 100%;
-  height: 264px;
+  height: 290px;
+  padding-left: 9px;
 }
 .gift-heading {
   display: table-cell;
@@ -433,7 +444,7 @@ body.page-accessory {
   }
 
   .gift-photo_copter {
-    height: 652px;
+    height: 677px;
   }
   .gift-name a {
     font-size: 17px;
@@ -442,24 +453,27 @@ body.page-accessory {
 }
 @media only screen and (min-width: 1200px) {
   .accessory-cover-text {
-    top: 262px;
-    right: 98px;
+    top: 258px;
+    right: 103px;
   }
   .accessory-phone-text {
-    top: 68px;
-    right: 34px;
+    top: 59px;
+    right: 41px;
   }
   .accessory-glass-text {
-    top: 68px;
-    left: 30px;
+    top: 59px;
+    left: 33px;
   }
   .accessory-connector-text {
-    top: 159px;
-    left: 20px;
+    top: 155px;
+    left: 12px;
   }
   .accessory-watch-text {
-    top: 300px;
-    left: 210px;
+    top: 306px;
+    left: 215px;
+  }
+  .accessory-gidgray-title, .accessory-gidrose-title, .accessory-gidgold-title {
+    margin-bottom: 1px;
   }
   .accessory-gidgray-text, .accessory-gidrose-text, .accessory-gidgold-text {
     position: absolute;
@@ -469,19 +483,22 @@ body.page-accessory {
   }
   .accessory-gidgray-text {
     top: 68px;
-    right: 7px;
+    right: 19px;
   }
   .accessory-gidrose-text {
     top: 4px;
-    right: 21px;
+    right: 26px;
+  }
+  .accessory-gidrose-link {
+    padding-left: 20px;
   }
   .accessory-gidgold-text {
-    top: 115px;
-    left: 113px;
+    top: 119px;
+    left: 117px;
   }
 
   .gift-photo_copter {
-    height: 650px;
+    height: 668px;
   }
   .gift-name {
     line-height: 32px;
