@@ -121,7 +121,8 @@ body.page-accessory
       font: 300 16px/24px $font-family
       color: $text-color
 .gift
-  margin-top: 77px
+  &-copter
+    margin-top: 77px
   &-product
     background-color: #eee
     padding: 23px 30px 75px
@@ -156,6 +157,7 @@ body.page-accessory
     width: 100%
     height: 290px
     padding-left: 9px
+    margin-top: 77px
   &-heading
     display: table-cell
     vertical-align: middle
@@ -216,8 +218,9 @@ body.page-accessory
       &_copter
         height: 400px
     &-title
-      height: auto
+      margin-top: 0
       padding-bottom: 40px
+      height: auto
     &-heading
       font-size: 30px
       line-height: 30px
@@ -230,10 +233,7 @@ body.page-accessory
     float: none
     display: inline-block
     vertical-align: top
-  .column-pl
-    right: 50%
-  .column-pr
-    left: 50%
+
   .accessory
     &-cover
       &-text
@@ -272,9 +272,16 @@ body.page-accessory
       &-link
         text-decoration: none
   .gift
+    float: right
+    &-copter
+      float: left
     &-photo
       &_copter
-        height: 634px
+        height: 644px
+    &-title
+      width: 49.7%
+      float: right
+
 +r(992)
   .column-3
     width: 33.33333%
@@ -282,10 +289,6 @@ body.page-accessory
   .column-9
     width: 66.66666%
     float: left
-  .column-pl
-    right: 33.33333%
-  .column-pr
-    left: 66.66666%
   .accessory
     &-title
       font: 300 20px/23px "Ubuntu", Helvetica, Arial, sans-serif
@@ -309,7 +312,7 @@ body.page-accessory
     &-watch
       &-text
         top: 240px
-        left: 162px
+        left: 113px
         font-size: 20px
         line-height: 23px
     &-gid
@@ -331,11 +334,13 @@ body.page-accessory
   .gift
     &-photo
       &_copter
-        height: 668px
+        height: 678px
     &-name 
       a
         font-size: 18px
         line-height: 22px
+    &-title
+      width: 33.33333%
 +r(1200)
   .accessory
     &-title
@@ -405,7 +410,7 @@ body.page-accessory
     &-photo
       height: 374px
       &_copter
-        height: 664px
+        height: 674px
     &-name 
       a
         font-size: 22px
